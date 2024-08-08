@@ -16,7 +16,7 @@ def add_version_url(url: str) -> str:
 
 
 urlpatterns = [
-    # TODO: Добавить /register/ и /sign-out/
+    # TODO: Добавить /register/ и /log-out/
     path(
         add_version_url('auth/token/'), TokenObtainPairView.as_view(),
         name='token_obtain_pair'
